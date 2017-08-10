@@ -58,4 +58,4 @@ This format is a standard and can be easily read from [Tensorflow Object Detecti
 
 ## License:
 
-Code released under <a href='http://github.com/pawelczak/EasyAutocomplete/blob/master/LICENSE.txt' >the MIT license</a>.
+Code released under the <a href='http://github.com/pawelczak/EasyAutocomplete/blob/master/LICENSE.txt' > MIT license</a>.

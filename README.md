@@ -7,13 +7,13 @@ Discover an example: http://bipbipavertisseur.alwaysdata.net/example
 
 ## Customization
 
-### Configuration
+### 1. Configuration
 To customize the directories used, edit the PHP file **inc/configuration.php**
 
-### Images
+### 2. Images
 Images to be annotated are located in **data/images/collection_01/part_1** and **data/images/collection_01/part_2**
 
-### List of classes
+### 3. List of classes
 
 The list of classes can be customized in the file **resources/list_of_tags.json**
 ```json
@@ -27,7 +27,7 @@ The list of classes can be customized in the file **resources/list_of_tags.json*
 The result is quite cool !<br />
 ![Screen Shot](http://bipbipavertisseur.alwaysdata.net/example/images/list_species.jpg)
 
-### Annotations Target directory 
+### 4. Annotations Target directory 
 Each image will generate one XML file in the directory **data/annotations**
 
 ## Output as Pascal VOC xml files
@@ -72,6 +72,6 @@ This format is a standard and can be easily read from [Tensorflow Object Detecti
 
 I modified some pieces of code to adapt the features to my needs.
 
-## License:
+## License
 
 Code released under the <a href='http://github.com/pawelczak/EasyAutocomplete/blob/master/LICENSE.txt' > MIT license</a>.

@@ -1,2 +1,2 @@
-# images_annotation_programme
+# Images Annotation Programme
 Online tool to label images for image recognition (Pascal VOC format)

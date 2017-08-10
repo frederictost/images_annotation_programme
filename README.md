@@ -1,5 +1,5 @@
 # Images Annotation Programme
-Online tool to label images for image recognition (Pascal VOC format).
+Online tool to label images for image recognition (Pascal VOC xml format).
 
 ![Screen Shot](http://bipbipavertisseur.alwaysdata.net/example/images/screen_shot_1.jpg)
 
@@ -8,7 +8,7 @@ Discover an example: http://bipbipavertisseur.alwaysdata.net/example/
 ## Customization
 
 ### Configuration
-To custom directories, edit the PHP file inc/configuration.php
+To customize the directories used, edit the PHP file inc/configuration.php
 
 ### Images
 Images to be annotated are located in data/images/collection_01/part_1 and data/images/collection_01/part_2
@@ -20,7 +20,7 @@ Each image will generate one XML file in the directory data/annotations
 
 This format is a standard and can be easily read with Google Detection API.
 
-'''xml
+```xml
 <?xml version="1.0"?>
 -<annotation>
 <folder>collection_01/part_1</folder>
@@ -48,7 +48,7 @@ This format is a standard and can be easily read with Google Detection API.
 </bndbox>
 </object>
 </annotation>
-'''
+```
 
 ## Contributions
 

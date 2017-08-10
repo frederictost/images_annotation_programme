@@ -24,7 +24,7 @@ The list of classes can be customized in the file **resources/list_of_tags.json*
 	{"name": "Baby Bird", "icon": "resources/tag_examples/baby_bird.jpg"}
 ]
 ```
-The result is quite cool !__
+The result is quite cool !<br />
 ![Screen Shot](http://bipbipavertisseur.alwaysdata.net/example/images/list_species.jpg)
 
 ### Annotations Target directory 

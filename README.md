@@ -11,7 +11,7 @@ Discover an example: http://bipbipavertisseur.alwaysdata.net/example
 To customize the directories used, edit the PHP file **inc/configuration.php**
 
 ### Images
-Images to be annotated are located in **data/images/collection_01/part_1 and data/images/collection_01/part_2**
+Images to be annotated are located in **data/images/collection_01/part_1** and **data/images/collection_01/part_2**
 
 ### List of classes
 

@@ -53,5 +53,9 @@ This format is a standard and can be easily read from [Tensorflow Object Detecti
 ## Contributions
 
 **Many thanks** to the contributors of these useful libraries:
-jQuery-select-areas see [GitHub project](https://github.com/360Learning/jquery-select-areas)
-EasyAutocomplete see [GitHub project](https://github.com/pawelczak/EasyAutocomplete)
+* jQuery-select-areas see [GitHub project](https://github.com/360Learning/jquery-select-areas)
+* EasyAutocomplete see [GitHub project](https://github.com/pawelczak/EasyAutocomplete)
+
+## License:
+
+Code released under <a href='http://github.com/pawelczak/EasyAutocomplete/blob/master/LICENSE.txt' >the MIT license</a>.

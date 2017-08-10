@@ -1,7 +1,7 @@
 # Images Annotation Programme
 Online tool to label images for image recognition (Pascal VOC xml format).
 
-![Screen Shot](http://bipbipavertisseur.alwaysdata.net/example/images/screen_shot_1.jpg)
+![Screen Shot](http://bipbipavertisseur.alwaysdata.net/example/images/screen_shot_2.jpg)
 
 Discover an example: http://bipbipavertisseur.alwaysdata.net/example/
 

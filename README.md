@@ -24,7 +24,7 @@ The list of classes can be customized in the file **resources/list_of_tags.json*
 	{"name": "Baby Bird", "icon": "resources/tag_examples/baby_bird.jpg"}
 ]
 ```
-The result is quite cool !
+The result is quite cool !__
 ![Screen Shot](http://bipbipavertisseur.alwaysdata.net/example/images/list_species.jpg)
 
 ### Annotations Target directory 
@@ -67,8 +67,8 @@ This format is a standard and can be easily read from [Tensorflow Object Detecti
 ## Contributions
 
 **Many thanks** to the contributors of these useful libraries:
-* jQuery-select-areas see [GitHub project](https://github.com/360Learning/jquery-select-areas)
-* EasyAutocomplete see [GitHub project](https://github.com/pawelczak/EasyAutocomplete)
+* [jQuery-select-areas](https://github.com/360Learning/jquery-select-areas) available on GitHub
+* [EasyAutocomplete](https://github.com/pawelczak/EasyAutocomplete) available on GitHub
 
 I modified some pieces of code to adapt the features to my needs.
 

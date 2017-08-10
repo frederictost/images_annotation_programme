@@ -1,5 +1,5 @@
 # Images Annotation Programme
-Online tool to label images for image recognition (Pascal VOC xml format).
+Free Online web tool to annotate images, output format is a list of xml files (Pascal VOC xml format).
 
 ![Screen Shot](http://bipbipavertisseur.alwaysdata.net/example/images/screen_shot_2.jpg)
 

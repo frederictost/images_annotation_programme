@@ -3,7 +3,7 @@ Online tool to label images for image recognition (Pascal VOC xml format).
 
 ![Screen Shot](http://bipbipavertisseur.alwaysdata.net/example/images/screen_shot_2.jpg)
 
-Discover an example: http://bipbipavertisseur.alwaysdata.net/example/
+Discover an example: http://bipbipavertisseur.alwaysdata.net/example
 
 ## Customization
 
@@ -12,6 +12,20 @@ To customize the directories used, edit the PHP file **inc/configuration.php**
 
 ### Images
 Images to be annotated are located in **data/images/collection_01/part_1 and data/images/collection_01/part_2**
+
+### List of classes
+
+The list of classes can be customized in the file **resources/list_of_tags.json**
+```json
+[
+	{"name": "Long Beak Bird", "icon": "resources/tag_examples/long_beak.jpg"},
+	{"name": "Eagle", "icon": "resources/tag_examples/eagle.jpg"},
+	{"name": "Parrot", "icon": "resources/tag_examples/parrot.jpg"},	
+	{"name": "Baby Bird", "icon": "resources/tag_examples/baby_bird.jpg"}
+]
+```
+The result is quite cool !
+![Screen Shot](http://bipbipavertisseur.alwaysdata.net/example/images/list_species.jpg)
 
 ### Annotations Target directory 
 Each image will generate one XML file in the directory **data/annotations**

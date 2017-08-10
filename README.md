@@ -9,7 +9,22 @@ Discover an example: http://bipbipavertisseur.alwaysdata.net/example
 
 ### 1. Configuration
 To customize the directories used, edit the PHP file **inc/configuration.php**
+```php
+<?php
+# Image path to be used in the HTML client
+$IMAGE_WEB_DIR = "data/images";
 
+# Image path for internal PHP use
+$IMAGE_ROOT_DIR  = "../data/images";
+$ANNOTATIONS_DIR = "../data/annotations";
+
+# Collection name 
+$COLLECTION_NAME = "collection_01";
+
+# Not annotated image 80% to be presented to user
+$ratio_new_old = 80;
+?>
+```
 ### 2. Images
 Images to be annotated are located in **data/images/collection_01/part_1** and **data/images/collection_01/part_2**
 

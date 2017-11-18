@@ -3,7 +3,7 @@ Free Online web tool to annotate images, output format is a list of xml files (P
 
 ![Screen Shot](http://bipbipavertisseur.alwaysdata.net/example/images/screen_shot_2.jpg)
 
-Discover an example: http://bipbipavertisseur.alwaysdata.net/example
+Discover an example: http://bipbipavertisseur.alwaysdata.net/image_annotations_v2.0_d1
 
 ## Customization
 

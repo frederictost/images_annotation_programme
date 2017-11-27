@@ -27,7 +27,8 @@
                 z: 0,
                 height: 0,
                 width: 0,
-				tag: ""
+				tag: "",
+				visibility: 1,
             },
             blur = function () {
                 area.z = 0;
@@ -40,6 +41,11 @@
             },
             getData = function () {
                 return area;
+            },
+			// F. TOST
+			setVisibility = function (new_visibility) {				
+				area.visibility = new_visibility;
+				refresh();
             },
 			// F. TOST
 			setTag = function (new_tag) {
@@ -99,7 +105,8 @@
                     height: area.height,
                     left: area.x,
                     top: area.y,
-                    "z-index": area.z
+                    "z-index": area.z,
+					"visibility": area.visibility ? "visible" : "hidden"
                 });
 
                 // Update the selection layer
@@ -110,7 +117,8 @@
                     height: (area.height - 2 > 0) ? (area.height - 2) : 0,
                     left : area.x + 1,
                     top : area.y + 1,
-                    "z-index": area.z + 2
+                    "z-index": area.z + 2,
+					"visibility": area.visibility ? "visible" : "hidden"
                 });								
 				
             },
@@ -153,6 +161,16 @@
                             top: area.y + top,
                             "z-index": area.z + 1
                         });
+						
+						if (area.visibility == 1)
+						{
+						   $handler.css({"visibility": "visible"});
+						}
+						else
+						{
+						   $handler.css({"visibility": "hidden"});
+						}
+						
                     });
                 } else {
                     $(".select-areas-resize-handler").each(function() {
@@ -163,7 +181,7 @@
             updateBtDelete = function (visible) {
                 if ($btDelete) {
                     $btDelete.css({
-                        display: visible ? "block" : "none",
+                        display: (visible & area.visibility) ? "block" : "none",
                         left: area.x + area.width + 1,
                         top: area.y - $btDelete.outerHeight() - 1,
                         "z-index": area.z + 1
@@ -177,12 +195,14 @@
 				if (area.y < 25)
 				{					
 					y_offset = area.height;
-				}
+				}											
+				// Manage tag & visibility
 				$tag.css({
-					left: area.x,
-                    top: area.y + y_offset - 1
-				});
-            },
+						left: area.x,
+						top: area.y + y_offset - 1,
+						"visibility": area.visibility ? "visible" : "hidden",
+					});
+            },			
             updateCursor = function (cursorType) {
                 $outline.css({
                     cursor: cursorType
@@ -556,6 +576,7 @@
         return {
             getData: getData,
 			setTag: setTag,
+			setVisibility: setVisibility,
 			resizeArea: resizeArea,
             startSelection: startSelection,
             deleteSelection: deleteSelection,
@@ -773,6 +794,12 @@
 		this._areas[id].setTag(new_tag);
     };
 	
+    // F. TOST	
+	$.imageSelectAreas.prototype.setVisibility = function (id, new_visibility) {        
+		
+		this._areas[id].setVisibility(new_visibility);
+    };
+		
 	// F. TOST
 	$.imageSelectAreas.prototype.resizeArea = function (id, width, height) {        
 		

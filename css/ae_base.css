@@ -30,51 +30,51 @@ a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:
 
 .serif_medium
 {    
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 120%;
 	text-align:center;
 }
 
 .ae_xxsmall
 {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 90%;
 }
 
 .ae_small_80
 {
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 80%;
 }
 
 .ae_small_90
-{
-	font-family: 'Rubik', sans-serif;
+{	
+	font-family: 'Raleway', sans-serif;
 	font-size: 80%;
 }
 
 .ae_xsmall
 {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 100%;
 }
 
 .serif_small
 {    
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 120%;	
 }
 
 .serif_xlarge
 {    
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 600%
 	
 }
 
 .serif_xsmall
 {    
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 90%;	
 }
 
@@ -113,6 +113,10 @@ div.image-decorator
 
 .light_green{
 	background-color: #d7f18a;
+}
+
+.light_violet{
+	background-color: #CFB0EB;
 }
 
 .green_color{
@@ -163,6 +167,11 @@ div.image-decorator
 	background-color: #8AD7F0;	
 }
 
+.tooltip.ae_button_level_3:hover
+{
+	background-color: #CFB0EB;	
+}
+
 .tooltip.ae_button_level_1:focus
 {
 	background-color: #afe313;	
@@ -173,9 +182,14 @@ div.image-decorator
 	background-color: #14AEE1;	
 }
 
+.tooltip.ae_button_level_3:focus
+{
+	background-color: #AE82D6;	
+}
+
 /* GREEN */
 .ae_button_level_1 {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 120%;
     background-color: #afe313; /* Green */
     border: none;
@@ -192,7 +206,7 @@ div.image-decorator
 
 /* BLUE */ 
 .ae_button_level_2 {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 120%;
     background-color: #14AEE1; /* Blue darker */
     border: none;
@@ -208,6 +222,22 @@ div.image-decorator
     outline: none;	
 }
 
+/* Pink */
+.ae_button_level_3 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 120%;
+    background-color: #AE82D6; /* Green */
+    border: none;
+    color: black;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;    
+	display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;	
+	outline: none;
+}
+
 /* Input Management*/
 input[type=text] {
     width: 100%;	
@@ -217,7 +247,7 @@ input[type=text] {
     border: 1px solid #000;    
     outline: none;
 	background-color:#fff;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	font-size: 18px;
 }
 

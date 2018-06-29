@@ -408,6 +408,12 @@ function setNotYetValidInputTag(_tag)
 function isTagInAuthorizedList()
 {
 	var region_tag = $("#tag_input").val();
+	
+	// automatically add tags to the current_area
+	if(current_area != null)
+	{
+		$('#image_to_process').selectAreas('setTag', current_area.id, region_tag);
+	}
 
 	list_of_tags = $("#tag_input").getAllItemData();
 
@@ -557,7 +563,9 @@ function isTagInAuthorizedList()
 
 	if (current_area == null)
 	{
-		onAreaChanged(null, current_area.id, areas);
+		//onAreaChanged(null, current_area.id, areas);
+		setStatusAndColor("No area detected.", RED_COLOR)
+		return false;
 	}
 
 	if (isAreaTooSmall(current_area))

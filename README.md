@@ -78,6 +78,14 @@ This format is a standard and can be easily read from [Tensorflow Object Detecti
 </annotation>
 ```
 
+## Run With Docker
+
+Clone this repository locally, then run this command in your terminal:
+
+	docker run -it -d --rm --name nginx-php-fpm -p 4000:80 -v $(pwd):/var/www/html richarvey/nginx-php-fpm
+	
+Browse to http://localhost:4000
+
 ## Contributions
 
 **Many thanks** to the contributors of these useful libraries:
